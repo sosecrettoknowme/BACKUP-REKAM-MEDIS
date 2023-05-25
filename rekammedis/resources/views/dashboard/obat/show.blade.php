@@ -1,0 +1,41 @@
+@extends('dashboard.layouts.main')
+
+@section('container')
+        
+<div class="container d-flex d-center">
+    <div class="row my-3">
+        <div class="col-lg-8">
+            <div class="card">
+                <img src="https://source.unsplash.com/1200x400?medicine" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">{{ $obat->name_obat }}</p>
+                  <p class="card-text">{{ $obat->ket_obat }}</p>
+                </div>
+              </div>
+            {{-- <h1 class="mb-5 text-center">{{ $post->title }}</h1>
+
+            <a href="/dashboard/dokters" class="btn btn-success"><span data-feather="arrow-left"></span> Back to all my dokters</a>
+            <a href="/dashboard/dokters{{ $post->slug }}/edit" class="btn btn-warning"><span data-feather="edit"></span> Edit</a>
+            <form action="/dashboard/dokters/{{ $post->slug }}" method="post" class="d-inline">
+                @method('delete')
+                @csrf
+                <button class="btn btn-danger" onclick="return confirm('Are you sure?')"><span data-feather="x-circle" ></span>Detete</button>
+              </form>
+
+              @if ($post->image)
+              <div style="max-height: 350px; overflow:hidden;">
+                <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->category->name }}" class="img-fluid mt-3">
+              </div>
+              @else
+              <img src="https://source.unsplash.com/1200x400?{{ $post->category->name }}" alt="{{ $post->category->name }}" class="img-fluid mt-3">
+              @endif
+
+            <article class="my-3 fs-5">
+                {!! $post->body !!}
+         
+            </article> --}}
+        </div>
+    </div>
+</div>
+
+@endsection
